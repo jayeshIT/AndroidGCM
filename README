@@ -1,0 +1,18 @@
+open App 
+
+-print deviceToken from  PushNotification.js
+var deviceToken = e.deviceToken; 
+
+-Create project on https://code.google.com/apis/console and ennable google cloud push messag e service 
+and take project id from web Browser address bar numeric number and API key from project 
+
+-in TiApp.xml
+ <property name="com.activate.gcm.sender_id" type="string">274991322732</property>
+    <!-- put your sender_id here -->
+    <property name="com.activate.gcm.icon" type="int">2130837504</property>
+    <!-- get this from R.java, but converted to decimal, 0x7f020000 give you 2130837504 (type "0x7f020000 to decimal" in google) -->
+    <property name="com.activate.gcm.component" type="string">gcm.gcm/gcm.gcm.GcmActivity</property>
+    <!-- [package name]/[package name].[activity name] -->
+
+
+-simplepushandroid.php with device token and key and run and get notification 
